@@ -1,15 +1,19 @@
+
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menu.Onclick = () => {
-    menu.classList.toggle('bx-x');
+menu.onclick = () => {
+    menu.classList.toggle('active');
     navbar.classList.toggle('active');
-}
+};
 
 window.onscroll = () => {
-    menu.classList.remove('bx-x');
+    menu.classList.remove('active');
     navbar.classList.remove('active');
-}
+};
+
+
+
 
 // Typing Text
 
