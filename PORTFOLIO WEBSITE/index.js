@@ -12,15 +12,13 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-
-
-
 // Typing Text
 
 const typed = new Typed('.multiple-text', {
     strings: ['Software Engineer', 'Fullstack Developer', 'Freelancer'],
-    typeSpeed: 80,
-    backSpeed: 80,
-    backDelay: 1200,
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1300,
     loop: true, 
   });
+  

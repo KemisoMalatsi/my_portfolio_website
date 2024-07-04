@@ -138,7 +138,8 @@ span {
 
 
 .home-content p {
-    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 
 .social-media a {
@@ -209,7 +210,8 @@ span {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
 }
 
@@ -232,6 +234,7 @@ span {
     gap: 2.3rem;
     margin-top: 4.2rem;
 }
+
 
 .row {
     background: var(--second-bg-color);
@@ -478,7 +481,7 @@ span {
 
 @media (max-width: 1285px){
     html{
-        font-sizee: 55%;
+        font-size: 55%;
     }
 }
 

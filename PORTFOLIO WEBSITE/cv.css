@@ -1,0 +1,60 @@
+.header {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #007BFF;
+}
+
+.my-name {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.my-contacts {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.p1 {
+    font-size: 1.5rem;
+}
+
+.h3 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.list li {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.education {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.
