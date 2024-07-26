@@ -10,6 +10,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Kemiso Malatsi - Portfolio</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+        })();
+    </script>
 </head>
 <body>
     <!-- Header section -->
@@ -130,22 +136,17 @@
     <!-- Contact section -->
 
     <section class="contact" id="contact">
-
         <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
-
             <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" id="phone" name="phone" placeholder="Phone Number" required>
+                <input type="text" id="subject" name="subject" placeholder="Email Subject" required>
             </div>
-
-            <textarea name="message" id="" cols="30" row="10" placeholder="Your message"></textarea>
-
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
