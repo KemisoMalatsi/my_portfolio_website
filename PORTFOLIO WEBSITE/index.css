@@ -76,12 +76,6 @@ header {
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon {
-    font-size: 3.6rem;
-    color: var(--main-color);
-    cursor: pointer;
-    display: none;
-}
 
 .nav-btn {
     display: inline-block;  
@@ -497,14 +491,21 @@ span {
     }
 }
 
-@media (max-width: 786px){
-    #menu-icon{
-        display: block;
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none; /* Initially hidden, will be shown in responsive view */
+}
+
+@media (max-width: 786px) {
+    #menu-icon {
+        display: block; /* Show menu icon on smaller screens */
     }
     .navbar {
         position: absolute;
         top: 100%;
-        right: 100%;
+        right: -100%;
         width: 255px;
         min-height: 100vh;
         display: flex;
@@ -513,14 +514,12 @@ span {
         transition: all 0.3s ease;
         backdrop-filter: blur(10px);
     }
-    .navbar a {
-        display: block;
-        padding: 17px;
-        font-size: 22px;
-    }
     .navbar.active {
         right: 0;
     }
+}
+
+
     .home {
         flex-direction: column;
     }
