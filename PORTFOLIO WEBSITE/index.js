@@ -13,14 +13,17 @@ window.onscroll = () => {
 };
 
 // Typing Text
+document.addEventListener('DOMContentLoaded', (event) => {
+    const typed = new Typed('.multiple-text', {
+        strings: ['Software Engineer', 'Fullstack Developer', 'Freelancer'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1300,
+        loop: true, 
+    });
+});
 
-const typed = new Typed('.multiple-text', {
-    strings: ['Software Engineer', 'Fullstack Developer', 'Freelancer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1300,
-    loop: true, 
-  });
+
   
 
   // EmailJS integration
