@@ -12,11 +12,11 @@ window.onscroll = () => {
 };
 
 // Typing Text
-const typed = new Typed('#element', {
+const typed = new Typed('.multiple-text', {
     strings: ['Cybersecurity Enthusiast', 'Aspiring Ethical Hacker' , 'Freelancer'],
-    typeSpeed: 80,
+    typeSpeed: 90,
     backSpeed: 80,
-    backDelay: 1200,
+    backDelay: 2000,
     loop: true,
   });
 
